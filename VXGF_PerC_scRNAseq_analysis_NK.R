@@ -15,22 +15,22 @@ NK_TSNEPlot <- function(seuratobject, ...){
 
 ##### Define a gene list that are interesting and should be shown in the
 ##### various plots
-genelist <- c("Csf1r", # Best Pan-macrophage marker in the cavities
+genelist <- c("Csf1r",  # Best Pan-macrophage marker in the cavities
               "Adgre1", # F4/80. high in LPM
-              "Itgam", # Cd11b, high in LPM
-              "Icam2", # CD102, high in LPM
-              "Timd4", # Some LPM express Tim4
-              "H2-Aa", # MHCII, high in SPM
+              "Itgam",  # Cd11b, high in LPM
+              "Icam2",  # CD102, high in LPM
+              "Timd4",  # Some LPM express Tim4
+              "H2-Aa",  # MHCII, high in SPM
               "Retnla", # RELMalpha, high in SPM
-              "Ccr2", # CCR2
-              "Cd209a",  # DC-SIGN  
+              "Ccr2",   # CCR2
+              "Cd209a", # DC-SIGN  
               "Mki67", "Top2a", # Prolif
               "Map1lc3a", # Interesting gene: LC3+ Macs
               "Folr2",   # Interesting gene: Folate receptor+ Macs
               "Notch2", # Interesting gene
-              "Ms4a1", "Cd79a", "Cd79b", # BC markers
-              "Fcer2a", "Fcmr", # Receptors
-              "Cd3e", "Cd4", "Cd8a")
+              "Ms4a1", "Cd79a", # BC markers
+              "Fcer2a", "Fcmr", "Lifr", # Receptors and BC markers
+              "Cd3e", "Cd4", "Nkg7")
 
 ##### Load Seurat object and markers (obtained by FindAllMarkers with
 ##### default arguments). Then calculate the Top10 markers per cluster

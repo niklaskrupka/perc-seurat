@@ -87,7 +87,7 @@ FeaturePlot(object = xbp1, features.plot = c("Csf1r", "Cd79a", "Cd3e", "Cd209a")
             cols.use = c("lightgrey", "#b2182b"), 
             pt.size = 1, 
             no.axes = TRUE,
-            nCol = 1)
+            nCol = 4)
 
 ##### Heatmap
 DoHeatmap(object = xbp1, genes.use = xbp1.top10markers$gene, 
